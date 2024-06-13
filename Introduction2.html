@@ -1,0 +1,119 @@
+<!-- Introduction -->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="https://cdn.tailwindcss.com"></script> <!-- यह cdn link निकाल देगे -->
+    <link rel="stylesheet" href="./dist/tailwind.css" />
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-blue-200">
+
+        <div class="hidden md:block">
+
+
+            <div class="flex items-center justify-between h-24">
+
+                <div class="grid grid-cols-3  lg:gap-x-4 md:gap-x-3 ml-4 ">
+
+                    <a href="#">Home</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div>
+                    <img src="image/logo.png" class="h-20 w-20" />
+                </div>
+
+                <div class="flex gap-x-5 mr-4">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="block md:hidden">
+
+            <div class="flex items-center justify-between h-24">
+                <div class="ml-4">
+                    <img src="image/logo.png" class="h-20 w-20" />
+                </div>
+
+                <div class="mr-4">
+                    <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+
+
+
+            <div class="hidden" id="mobileMenuContent">
+
+                <div class="flex flex-col text-xl ml-4">
+                    <a href="#" class="p-3">Home</a>
+                    <a href="#" class="p-3">Blog</a>
+                    <a href="#" class="p-3">Contact</a>
+                </div>
+
+                <div class="flex ml-4 gap-x-4">
+                    <a href="" class="p-3"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-blue-200 lg:p-10 md:p-5 "> <!-- introduction ke liye ek section lete hai ttha  2 div bhi-->
+        <div class="grid md:grid-cols-2 grid-cols-1"><!--introduction and image ko web page ko 2 part mei krte hai "Grid-cols-2"  se -->
+                <!-- middle aur large mei 2 part mei,  small device mei 1 part mei "grid-cols-1 "  -->
+            <div id="introduction" class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:5 mb-5 "> <!--  1st div -->
+               <!--  1stdiv  written section center mei aa gyae mobile ke text center p-2 line 75 -->
+                <h1 class="text-sm">Hello This is my<i class="fa-solid fa-snowflake"></i></h1> <!-- small rakhege -->
+                <h1 class="lg:text-6xl md:text-4xl text-3xl mt-1">TAILWIND SITE</h1> <!-- big  rakhege  padding bhi dege  small 3xl-->
+                <h1 class="lg:text-4xl md:text-3xl text-3xl mt-5">Web Site Deginer</h1> <!-- lg: large device, md: small device -->
+
+                <p class="text-sm md:mt-14 mt-9 "> <!-- small ke liye mt-9  -->
+                    Think of an interesting way to greet your viewers.
+                    <br />
+                    A Web Developer is a professional who is responsible for the design and construction of websites.
+                    They ensure that sites meet user expectations by ensuring they look good,
+                    run smoothly and offer easy access points with no loading issues between pages or error messages
+                </p>  <!-- md:  middle se upr sare mei apply hoga (small mei nahi) -->
+                <div class="flex space-x-5 mt-5 justify-center md:justify-start"> <!-- icon class और margin , space, दिया है  small justify center-->
+                    <a href="" class="p-3"><i class="fa-brands fa-square-facebook"></i></a><!-- icon ki padding-->
+                    <a href="" class="p-3"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div id="intro-image" class="flex flex-col justify-center align-middle lg:p-10 md:p-5 p-3"> <!-- image  2 div  p-3 small device ke liye -->
+                <img src="image/undraw_building_websites_i78t.svg" />
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/7ba7b2195b.js" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        function toggleMenu() {
+            const mobileMenuContent = document.getElementById('mobileMenuContent')
+            if (mobileMenuContent.getAttribute('class') === 'hidden') {
+                mobileMenuContent.setAttribute('class', 'block')
+            } else {
+                mobileMenuContent.setAttribute('class', 'hidden')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
