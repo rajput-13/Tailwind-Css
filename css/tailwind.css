@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {  /*  smooth  scroll ke liye khud likhege  footer section ke liye smmoth chale , iske sath  command run krege  nai css bnana  */
+    scroll-behavior: smooth;
+}
