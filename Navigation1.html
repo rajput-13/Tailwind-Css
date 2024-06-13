@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<script src="https://cdn.tailwindcss.com"></script> <!-- यह cdn link निकाल देगे -->
+  <link rel="stylesheet" href="./dist/tailwind.css" /> <!-- css dist बाली देनी है फाइल hrf में -->
+</head>
+
+<body class="bg-gray-100"> <!-- background color-->
+  <nav class="bg-blue-200"> <!-- nav container lete hai pura structure design krte hai -->
+
+    <div class="hidden md:block">
+      <!-- "md:block मिडले उससे ऊपर देखेग" line 15 se 22 ko mobile ke liye hide kiya hai  mobile  में नहीं दिखाए देगे -->
+
+      <div class="flex items-center justify-between h-24"> <!-- class flex uske baad 3 part bnaege -->
+        <!--"justify jitne element hai same size mei krega"-->
+        <div class="grid grid-cols-3  lg:gap-x-4 md:gap-x-3 ml-4 ">
+          <!-- Grid use krege  3 item है तीनों अलग है part 1 ka div-->
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div> <!-- part 2 ka div-->
+          <img src="image/logo.png" class="h-20 w-20" /> <!-- part 2 set logo image  and set hight and width of img-->
+        </div>
+
+        <div class="flex gap-x-5 mr-4"> <!-- part 3 ka div sare icon font awosome wale use krege  "space ke liye Gap "-->
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="block md:hidden"> <!-- mobile ke liye dikhega   mediam device ke liye hide krega  -->
+
+      <div class="flex items-center justify-between h-24">
+        <div class="ml-4"> <!-- mobile ke liye image  -->
+          <img src="image/logo.png" class="h-20 w-20" />
+        </div>
+    
+      <div class="mr-4"> <!-- mobile ke liye button rakhege  font awsome se -->
+          <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button> <!-- function call karta hai  -->
+      </div>  
+      </div>
+
+
+    <!--id="mobileMenuContent  yeh bhi dete hai-->
+      <div class="hidden" id="mobileMenuContent">
+      <!-- navigation bala mobile ke liye   button पर क्लिक करते है तभी दिखाई देगा इसलिए  hidden रखते  है -->
+        <div class="flex flex-col text-xl ml-4">
+          <a href="#" class="p-3">Home</a> <!-- sabhi mei paddind -->
+          <a href="#" class="p-3">Blog</a>
+          <a href="#" class="p-3">Contact</a>
+        </div>
+
+        <div class="flex ml-4 gap-x-4">
+          <a href="" class="p-3"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="" class="p-3"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="" class="p-3"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="" class="p-3"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://kit.fontawesome.com/7ba7b2195b.js" crossorigin="anonymous"></script>
+
+  <!-- java script code hide hoga to show krega 
+   show hoga to hide krege    इसको call करना है button click पर -->
+  <script>
+    function toggleMenu() {
+      const mobileMenuContent = document.getElementById('mobileMenuContent')
+      if (mobileMenuContent.getAttribute('class') === 'hidden') {
+        mobileMenuContent.setAttribute('class', 'block')
+      } else {
+        mobileMenuContent.setAttribute('class', 'hidden')
+      }
+    }
+  </script>
+
+</body>
+</html>
