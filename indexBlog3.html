@@ -1,0 +1,178 @@
+<!-- Introduction -->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="https://cdn.tailwindcss.com"></script> <!-- यह cdn link निकाल देगे -->
+    <link rel="stylesheet" href="./dist/tailwind.css" />
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-blue-200">
+
+        <div class="hidden md:block">
+
+
+            <div class="flex items-center justify-between h-24">
+
+                <div class="grid grid-cols-3  lg:gap-x-4 md:gap-x-3 ml-4 ">
+
+                    <a href="#">Home</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div>
+                    <img src="image/logo.png" class="h-20 w-20" />
+                </div>
+
+                <div class="flex gap-x-5 mr-4">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="block md:hidden">
+
+            <div class="flex items-center justify-between h-24">
+                <div class="ml-4">
+                    <img src="image/logo.png" class="h-20 w-20" />
+                </div>
+
+                <div class="mr-4">
+                    <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+
+
+
+            <div class="hidden" id="mobileMenuContent">
+
+                <div class="flex flex-col text-xl ml-4">
+                    <a href="#" class="p-3">Home</a>
+                    <a href="#" class="p-3">Blog</a>
+                    <a href="#" class="p-3">Contact</a>
+                </div>
+
+                <div class="flex ml-4 gap-x-4">
+                    <a href="" class="p-3"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-blue-200 lg:p-10 md:p-5 "> 
+        <div class="grid md:grid-cols-2 grid-cols-1">  
+                
+            <div id="introduction" class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:5 mb-5 "> 
+               
+                <h1 class="text-sm">Hello This is my<i class="fa-solid fa-snowflake"></i></h1> 
+                <h1 class="lg:text-6xl md:text-4xl text-3xl mt-1">TAILWIND SITE</h1> 
+                <h1 class="lg:text-4xl md:text-3xl text-3xl mt-5">Web Site Deginer</h1> 
+
+                <p class="text-sm md:mt-14 mt-9 "> 
+                    Think of an interesting way to greet your viewers.
+                    <br />
+                    A Web Developer is a professional who is responsible for the design and construction of websites.
+                    They ensure that sites meet user expectations by ensuring they look good,
+                    run smoothly and offer easy access points with no loading issues between pages or error messages
+                </p>  
+                <div class="flex space-x-5 mt-5 justify-center md:justify-start"> 
+                    <a href="" class="p-3"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div id="intro-image" class="flex flex-col justify-center align-middle lg:p-10 md:p-5 p-3"> 
+                <img src="image/undraw_building_websites_i78t.svg" />
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="p-10"> <!-- blog section  mei id bhi de sakte hai -->
+        <div class="mb-10"> <!-- 3 strucure hai to 3 div  first div-->
+            <h1 class=" text-5xl">Blogs</h1>
+        </div>
+
+        <div class="grid lg:grid-cols-5 md:grid-cols-3 gap-5"> <!-- div 2  main div hai isme bhut shote div aaege  "grid use krege "(gap 5 diya sabhi mei)-->
+            <div class="rounded-xl bg-blue-200 p-8"> <!-- phla image description-->
+                <img class="rounded-xl" src="image/blog1.jpg" />
+
+                <h1 class="text-2xl mt-6 font-bold">make a choice !!</h1>
+                <p class="mt-3 text-sm">something that is preferred or preferable to others; the best part of something: Mare's Nest is the choice in the sixth race. 
+                   a carefully selected supply: This restaurant has a fine choice of wines.  </p>
+            </div>
+            <div class="rounded-xl bg-pink-200 p-8"> <!-- 2nd image description same bacground color dege image ki tarha -->
+                <img class="rounded-xl" src="image/blog2.jpg" />
+
+                <h1 class="text-2xl mt-6 font-bold">make a choice !!</h1>
+                <p class="mt-3 text-sm">something that is preferred or preferable to others; the best part of something: Mare's Nest is the choice in the sixth race. 
+                   a carefully selected supply: This restaurant has a fine choice of wines.  </p>
+            </div>
+            <div class="rounded-xl bg-yellow-300 p-8">  <!-- 3rd image description-->
+                <img class="rounded-xl" src="image/blog3.jpg" />
+
+                <h1 class="text-2xl mt-6 font-bold">make a choice !!</h1>
+                <p class="mt-3 text-sm">something that is preferred or preferable to others; the best part of something: Mare's Nest is the choice in the sixth race. 
+                   a carefully selected supply: This restaurant has a fine choice of wines.  </p>
+            </div>
+            <div class="rounded-xl bg-green-300 p-8"> <!-- 4th image description-->
+                <img class="rounded-xl" src="image/blog4.jpg" />
+
+                <h1 class="text-2xl mt-6 font-bold">make a choice !!</h1>
+                <p class="mt-3 text-sm">something that is preferred or preferable to others; the best part of something: Mare's Nest is the choice in the sixth race. 
+                   a carefully selected supply: This restaurant has a fine choice of wines.  </p>
+            </div>
+            <div class="rounded-xl bg-gray-300 p-8"> <!-- 5th image description image jaise color dena hai light mei -->
+                <img class="rounded-xl" src="image/blog5.jpg" />
+
+                <h1 class="text-2xl mt-6 font-bold">make a choice !!</h1>
+                <p class="mt-3 text-sm">something that is preferred or preferable to others; the best part of something: Mare's Nest is the choice in the sixth race. 
+                   a carefully selected supply: This restaurant has a fine choice of wines.  </p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 grid-cols-1 mt-10 rounded-xl p-8 bg-blue-200"><!-- div 3  image and hadding  ko 2 part mei divid krege-->
+            <div> <!-- phle div mei image rakhege-->
+                <img src="image/blog5.svg"  class="rounded-xl" />
+            </div>
+
+            <div class="flex flex-col justify-center align-middle md:p-8 p-3"> <!-- isme Text aaega  md middle device, p-3 small ke liye padding-->
+                <h1 class="text-2xl">Learn Tailwind css !!!</h1>
+                <p class="text-sm mt-4"> Tailwind CSS is a utility-first CSS framework that streamlines web development by providing
+                    a set of pre-designed utility classes. These classes enable rapid styling without writing custom CSS,
+                    Tailwind’s approach shifts focus from traditional CSS components to functional classes etc.</p>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <script src="https://kit.fontawesome.com/7ba7b2195b.js" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        function toggleMenu() {
+            const mobileMenuContent = document.getElementById('mobileMenuContent')
+            if (mobileMenuContent.getAttribute('class') === 'hidden') {
+                mobileMenuContent.setAttribute('class', 'block')
+            } else {
+                mobileMenuContent.setAttribute('class', 'hidden')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
