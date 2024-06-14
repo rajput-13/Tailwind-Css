@@ -1,0 +1,385 @@
+<!-- main page for blog file 1 set internal link for blog 8 file-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="https://cdn.tailwindcss.com"></script> <!-- यह cdn link निकाल देगे -->
+    <link rel="stylesheet" href="./dist/tailwind.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- animated link -->
+
+
+</head>
+
+<body id="home" class="bg-gray-100"> 
+    <nav class="bg-blue-200">
+
+        <div class="hidden md:block">
+
+
+            <div class="flex items-center justify-between h-24">
+
+                <div class="grid grid-cols-3  lg:gap-x-4 md:gap-x-3 ml-4 ">
+
+                    <a href="#">Home</a>
+                    <a href="#blogs">Blog</a> 
+                    <a href="#contacts">Contact</a> 
+                </div>
+
+                <div>
+                    <img src="image/logo.png" class="h-20 w-20" />
+                </div>
+
+                <div class="flex gap-x-5 mr-4">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="block md:hidden">
+
+            <div class="flex items-center justify-between h-24">
+                <div class="ml-4">
+                    <img src="image/logo.png" class="h-20 w-20" />
+                </div>
+
+                <div class="mr-4">
+                    <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+
+
+
+            <div class="hidden" id="mobileMenuContent">
+
+                <div class="flex flex-col text-xl ml-4">
+                    <a href="#" class="p-3">Home</a>
+                    <a href="#blogs" class="p-3">Blog</a> 
+                    <a href="#contacts" class="p-3">Contact</a>
+                </div>
+
+                <div class="flex ml-4 gap-x-4">
+                    <a href="" class="p-3"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-gradient-to-r from-blue-200 lg:p-10 md:p-5 ">  <!-- intro section paste animated -->
+        <div class="grid md:grid-cols-2 grid-cols-1">  
+                <!-- paste animated here animate__fadeInLeft   then wow add करेगे wow को install कई bad -->
+            <div id="introduction" class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:5 mb-5 wow animate__animated animate__fadeInLeft"> 
+               
+                <h1 class="text-sm">Hello This is my<i class="fa-solid fa-snowflake"></i></h1> 
+                <h1 class="lg:text-6xl md:text-4xl text-3xl mt-1">TAILWIND SITE</h1> 
+                <h1 class="lg:text-4xl md:text-3xl text-3xl mt-5">Web Site Deginer</h1> 
+
+                <p class="text-sm md:mt-14 mt-9 "> 
+                    Think of an interesting way to greet your viewers.
+                    <br />
+                    A Web Developer is a professional who is responsible for the design and construction of websites.
+                    They ensure that sites meet user expectations by ensuring they look good,
+                    run smoothly and offer easy access points with no loading issues between pages or error messages
+                </p>  
+                <div class="flex space-x-5 mt-5 justify-center md:justify-start"> 
+                    <a href="" class="p-3"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="" class="p-3"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+                <!-- animated image right to left-->
+            <div id="intro-image" class="flex flex-col justify-center align-middle lg:p-10 md:p-5 p-3 wow animate__animated animate__fadeInRight "> 
+                <img src="image/undraw_building_websites_i78t.svg" />
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="p-10"> <!-- blog section  ke andr highlight div mei jae blog internal link ke liye  "href"-->
+        <div class="mb-10"> 
+            <h1 class=" text-5xl">Blogs</h1>
+        </div>
+
+        <div class="grid lg:grid-cols-5 md:grid-cols-3 gap-5 wow animate__animated animate__zoomIn"> 
+            <div class="rounded-xl bg-blue-200 p-8"> 
+                <img class="rounded-xl" src="image/blog1.jpg" />
+
+                <h1 class="text-2xl mt-6 font-bold">make a choice !!</h1>
+                <p class="mt-3 text-sm">something that is preferred or preferable to others; the best part of something: Mare's Nest is the choice in the sixth race. 
+                   a carefully selected supply: This restaurant has a fine choice of wines.  </p>
+            </div>
+            <div class="rounded-xl bg-pink-200 p-8 wow animate__animated animate__zoomIn">
+                <img class="rounded-xl" src="image/blog2.jpg" />
+
+                <h1 class="text-2xl mt-6 font-bold">make a choice !!</h1>
+                <p class="mt-3 text-sm">something that is preferred or preferable to others; the best part of something: Mare's Nest is the choice in the sixth race. 
+                   a carefully selected supply: This restaurant has a fine choice of wines.  </p>
+            </div>
+            <div class="rounded-xl bg-yellow-300 p-8 wow animate__animated animate__zoomIn">  
+                <img class="rounded-xl" src="image/blog3.jpg" />
+
+                <h1 class="text-2xl mt-6 font-bold">make a choice !!</h1>
+                <p class="mt-3 text-sm">something that is preferred or preferable to others; the best part of something: Mare's Nest is the choice in the sixth race. 
+                   a carefully selected supply: This restaurant has a fine choice of wines.  </p>
+            </div>
+            <div class="rounded-xl bg-green-300 p-8 wow animate__animated animate__zoomIn">
+                <img class="rounded-xl" src="image/blog4.jpg" />
+
+                <h1 class="text-2xl mt-6 font-bold">make a choice !!</h1>
+                <p class="mt-3 text-sm">something that is preferred or preferable to others; the best part of something: Mare's Nest is the choice in the sixth race. 
+                   a carefully selected supply: This restaurant has a fine choice of wines.  </p>
+            </div>
+            <div class="rounded-xl bg-gray-300 p-8 wow animate__animated animate__zoomIn"> 
+                <img class="rounded-xl" src="image/blog5.jpg" />
+
+                <h1 class="text-2xl mt-6 font-bold">make a choice !!</h1>
+                <p class="mt-3 text-sm">something that is preferred or preferable to others; the best part of something: Mare's Nest is the choice in the sixth race. 
+                   a carefully selected supply: This restaurant has a fine choice of wines.  </p>
+            </div>
+        </div>
+
+        <a href="blog8.html" > <!-- यहा blog8.html कि link दे देनी है  anchor tag close krege  यहा div खतम होता है बहा </a>-->
+
+        <div class="border-4 hover:border-blue-600 grid md:grid-cols-2 grid-cols-1 mt-10 rounded-xl p-8 bg-blue-200"> 
+            <div> 
+                <img src="image/blog5.svg"  class="rounded-xl" />
+            </div>
+
+            <div class="flex flex-col justify-center align-middle md:p-8 p-3"> 
+                <h1 class="text-2xl hover:underline">Learn Tailwind css !!!</h1>
+                <p class="text-sm mt-4"> Tailwind CSS is a utility-first CSS framework that streamlines web development by providing
+                    a set of pre-designed utility classes. These classes enable rapid styling without writing custom CSS,
+                    Tailwind’s approach shifts focus from traditional CSS components to functional classes etc.</p>
+            </div>
+        </div>
+    </a>
+    </section>
+
+    <section id="service" class="bg-gradient-to-l from-blue-200 lg:p-10 md:p-5 p-3"> <!-- service section color change-->
+
+        <div class="mb-10"> <!-- service div 1st-->
+            <h1 class="text-5xl">Services</h1>
+        </div>
+
+        <div id="serviceMainGrid" class="grid md:grid-cols-2  gap-4">
+             
+            <div id="firstService" class="grid grid-cols-12 bg-white rounded-xl wow animate__animated animate__fadeInLeft"> 
+                <div id="icon" class="bg-blue-600 col-span-2 flex justify-center place-items-center rounded-l-xl text-white"> 
+                    <i class="fa-solid fa-laptop-code text-2xl"></i>
+                </div>  
+                
+                <div id="description" class="px-3 py-5 col-span-10"> 
+                    <h1 class="text-2xl">Web Designing</h1>
+                    <p class="text-sm mt-3">Web Design is a field related to designing websites on the Internet. Without a good design,
+                        A good website design helps to create an engaging online presence that captivates the audience !!!</p>
+                </div>
+            </div>
+
+            <div id="secondService" class="grid grid-cols-12 bg-white rounded-xl  wow animate__animated animate__fadeInRight"> <!-- Service 2nd -->
+                <div id="icon" class="bg-blue-600 col-span-2 flex justify-center place-items-center rounded-l-xl text-white"> 
+                    <i class="fa-solid fa-file-code text-2xl"></i>
+                </div>  
+                
+                <div id="description" class="px-3 py-5 col-span-10"> 
+                    <h1 class="text-2xl">Web Deployment</h1>
+                    <p class="text-sm mt-3">Web development refers to the creating, building, and maintaining of websites. 
+                        It includes aspects such as web design, web publishing, web programming, and database management.
+                        It is the creation of an application that works over the internet i.e. websites. !!!</p>
+                </div>
+            </div>
+
+            <div id="ThridService" class="grid grid-cols-12 bg-white rounded-xl wow animate__animated animate__fadeInLeft"> <!-- Service 3rd -->
+                <div id="icon" class="bg-blue-600 col-span-2 flex justify-center place-items-center rounded-l-xl text-white"> 
+                    <i class="fa-solid fa-code text-2xl"></i>
+                </div>  
+                
+                <div id="description" class="px-3 py-5 col-span-10"> 
+                    <h1 class="text-2xl">UI/UX</h1>
+                    <p class="text-sm mt-3">User Interface (UI) and User Experience (UX) Design play key roles in the experience
+                         users have when interacting with digital products and applications.
+                         You’ll also design your own wireframes and interactive prototypes. !!!</p>
+                </div>
+            </div>
+
+            <div id="FourthService" class="grid grid-cols-12 bg-white rounded-xl wow animate__animated animate__fadeInRight"> <!-- Service 4th -->
+                <div id="icon" class="bg-blue-600 col-span-2 flex justify-center place-items-center rounded-l-xl text-white"> 
+                    <i class="fa-solid fa-laptop-code text-2xl"></i>
+                </div>  
+                
+                <div id="description" class="px-3 py-5 col-span-10"> 
+                    <h1 class="text-2xl">Bootstrap</h1>
+                    <p class="text-sm mt-3">Bootstrap is a widely-used open-source front-end framework for web development, 
+                        providing a collection of HTML, CSS, and JavaScript components and tools that enable developers to build 
+                        responsive, mobile-first websites with ease !!!</p>
+                </div>
+            </div>
+
+            <div id="FifthService" class="grid grid-cols-12 bg-white rounded-xl wow animate__animated animate__fadeInLeft"> <!-- Service 5th -->
+                <div id="icon" class="bg-blue-600 col-span-2 flex justify-center place-items-center rounded-l-xl text-white"> 
+                    <i class="fa-solid fa-laptop-code text-2xl"></i>
+                </div>  
+                
+                <div id="description" class="px-3 py-5 col-span-10"> 
+                    <h1 class="text-2xl">GitHub</h1>
+                    <p class="text-sm mt-3">GitHub is an web based platform which hosts software development projects and uses Git for version management.
+                         Git is a distributed version control system that helps 
+                        developers to work together on same software projects and keep track of changes made to their code by on another. !!!</p>
+                </div>
+            </div>
+
+            <div id="SixthService" class="grid grid-cols-12 bg-white rounded-xl wow animate__animated animate__fadeInRight"> <!-- Service 6th -->
+                <div id="icon" class="bg-blue-600 col-span-2 flex justify-center place-items-center rounded-l-xl text-white"> 
+                    <i class="fa-solid fa-laptop-code text-2xl"></i>
+                </div>  
+                
+                <div id="description" class="px-3 py-5 col-span-10"> 
+                    <h1 class="text-2xl">JavaScript</h1>
+                    <p class="text-sm mt-3">JavaScript is a lightweight, cross-platform, single-threaded, and interpreted compiled programming language.
+                        It is also known as the scripting language for webpages. 
+                        It is well-known for the development of web pages, and many non-browser environments also use it. !!!</p>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section id="portfolio" class="md:p-10 p-3"> <!-- portfolio section -->
+        <div class="mb-10"> 
+            <h1 class=" text-5xl">Portfolio</h1>
+        </div>
+
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example"> 
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="grid md:grid-cols-2 grid-cols-1 bg-white place-items-center"> <!-- div 1 slider -->
+                            <div id="websitedescription" class="flex flex-col justify-center align-middle p-3 md:ml-20 ml-2 ">
+                                <h1 class="text-3xl">Freelancing Website</h1>
+                                <p class="mt-4 text-sm">A freelancer is an individual who earns money on a per-job basis, 
+                                usually for short-term work as an independent contractor.</p>
+                
+                                <ul class="mt-8 text-sm  flex flex-col ml-10"> 
+                                    <li><i class="fa-solid fa-chevron-right"></i> HTML 5</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> CSS 3</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> GIT /GITHUB</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Photoshope</li>                    
+                                    <li><i class="fa-solid fa-chevron-right"></i> Web Deoloyment</li>
+                                    <li class="mt-5"><button class="p-2 bg-blue-700 rounded text-white w-full">Visit <i class="fa-regular fa-paper-plane"></i></button></li>
+                                
+                                </ul>
+                            </div>
+                
+                            <div id="websiteimage" class="p-3">
+                                <img src="image/freelancer-portfolio-740-600 (1).jpg" class="w-3/4 border-2 rounded-xl"/> <!-- image width-->
+                            </div>
+                        </div>
+                      </li>
+
+                      <li class="splide__slide">
+                        <div class="grid md:grid-cols-2 grid-cols-1 bg-white place-items-center"> <!-- div (2)-->
+                            <div id="websitedescription" class="flex flex-col justify-center align-middle p-3 md:ml-20 ml-2">
+                                <h1 class="text-3xl">Main Home</h1>
+                                <p class="mt-4 text-sm">A freelancer is an individual who earns money on a per-job basis, 
+                                usually for short-term work as an independent contractor.</p>
+                
+                                <ul class="mt-8 text-sm flex flex-col ml-10"> 
+                                    <li><i class="fa-solid fa-chevron-right"></i> HTML 5</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> CSS 3</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> GIT /GITHUB</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Photoshope</li>                    
+                                    <li><i class="fa-solid fa-chevron-right"></i> Web Deoloyment</li>
+                                    <li class="mt-5"><button class="p-2 bg-blue-700 rounded text-white w-full">Visit <i class="fa-regular fa-paper-plane"></i></button></li>
+                
+                                </ul>
+                            </div>
+                
+                            <div id="websiteimage" class="p-3">
+                                <img src="image/creative-agency-740-600 (1).jpg" class="w-3/4 border-2 rounded-xl"/> 
+                            </div>
+                        </div>
+                      </li>
+
+                      <li class="splide__slide">
+                        <div class="grid md:grid-cols-2 grid-cols-1 bg-white place-items-center"> <!-- (3)-->
+                            <div id="websitedescription" class="flex flex-col justify-center align-middle p-3 md:ml-20 ml-2"> 
+                                <h1 class="text-3xl">Main Home</h1>
+                                <p class="mt-4 text-sm">A freelancer is an individual who earns money on a per-job basis, 
+                                usually for short-term work as an independent contractor.</p>
+                
+                                <ul class="mt-8 text-sm flex flex-col ml-10"> 
+                                    <li><i class="fa-solid fa-chevron-right"></i> HTML 5</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> CSS 3</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> GIT /GITHUB</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Photoshope</li>                    
+                                    <li><i class="fa-solid fa-chevron-right"></i> Web Deoloyment</li>
+                                    <li class="mt-5"><button class="p-2 bg-blue-700 rounded text-white w-full">Visit <i class="fa-regular fa-paper-plane"></i></button></li>
+                
+                                </ul>
+                            </div>
+                
+                            <div id="websiteimage" class="p-3">
+                                <img src="image/creative-agency-740-600 (1).jpg" class="w-3/4 border-2 rounded-xl"/> 
+                            </div>
+                        </div>
+                      </li>
+                  </ul>
+          </div>
+    </section>
+
+    <footer id="contacts" class="p-20 text-center bg-gray-900 ">  <!-- footter section-->
+        <i class="fa-solid fa-star md-4 text-white wow animate__animated animate__zoomIn"></i>
+
+        <h1 class="md:text-4xl text-1xl my-3 text-white wow animate__animated animate__zoomIn">thakurditto@gmail.com</h1> 
+
+        <div class="my-10 text-blue-500  text-sm wow animate__animated animate__zoomIn"> 
+            <a href="" class="p-3  hover:text-blue-100"><i class="fa-brands fa-square-facebook"></i></a> 
+            <a href="" class="p-3  hover:text-blue-100"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="p-3  hover:text-blue-100"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="" class="p-3  hover:text-blue-100"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <div class="fixed p-3 bottom-0 right-0"> 
+
+        <a href="#home" class=" text-blue-500 text-3xl"><i class="fa-solid fa-circle-up"></i></a> 
+    </div>
+
+    
+    <script src="https://kit.fontawesome.com/7ba7b2195b.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        function toggleMenu() {
+            const mobileMenuContent = document.getElementById('mobileMenuContent')
+            if (mobileMenuContent.getAttribute('class') === 'hidden') {
+                mobileMenuContent.setAttribute('class', 'block')
+            } else {
+                mobileMenuContent.setAttribute('class', 'hidden')
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>  
+
+    <script>  
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' );
+          splide.mount();
+          new WOW().init(); /* wow को init को इसमे रखेगे  */
+        } );
+      </script>
+
+    <script src="js/wow.min.js"></script> 
+
+
+</body>
+
+</html>
